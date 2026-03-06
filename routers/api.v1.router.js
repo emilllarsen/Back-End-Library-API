@@ -2,22 +2,22 @@ import express from "express";
 import uController from "../controllers/v1.user.controller.js";
 import bController from "../controllers/v1.book.controller.js";
 
+import { validate } from "../validators/v1.validate.js"
+
+import userValidator from "../validators/v1.user.validator.js";
 const apiV1Router = express.Router();
 
 
 // Assigning handlers to routes
 apiV1Router.get("/users", uController.getAllUsers);
-apiV1Router.get("/users/:uid", uController.getUser);
-apiV1Router.get("/users/:uid/loans", uController.getLoans);
+apiV1Router.get("/users/:uid", userValidator.validateUid(), validate, uController.getUser);
+apiV1Router.get("/users/:uid/loans", userValidator.validateUid(), validate, uController.getLoans);
 
+apiV1Router.post("/users", validate,  uController.createUser) // Create a new user
+apiV1Router.put("/users/:uid", userValidator.validateUid(), validate, uController.updateUser) // Updating a specific user
 
-apiV1Router.post("/users", uController.createUser) // Create a new user
-apiV1Router.put("/users/:uid", uController.updateUser) // Updating a specific user
-
-
-
-apiV1Router.post("/users/:uid/loans", uController.loanBook); // Adding a book to a list of loaned books to a specific user
-apiV1Router.delete("/users/:uid/loans/:loanid", uController.unloanBook); // removing a book from the list of loaned books for a specific user
+apiV1Router.post("/users/:uid/loans", userValidator.validateUid(), validate, uController.loanBook); // Adding a book to a list of loaned books to a specific user
+apiV1Router.delete("/users/:uid/loans/:loanid", userValidator.validateUid(), validate, uController.unloanBook); // removing a book from the list of loaned books for a specific user
 
 
 
