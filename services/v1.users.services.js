@@ -8,6 +8,14 @@ export function getAUser(uid){
     return {name: "Emil", uid: 1, status: "Not very happy for now..." }
 }
 
+export function checkUserExist(uid){
+    if(uid > 0 && uid < 100){
+        return true
+    }
+    throw new Error(`The user with id ${uid} does not exist!`);
+}
+
 export default {
-    getAUser
+    getAUser,
+    checkUserExist
 }
