@@ -21,9 +21,6 @@ export function createUser(req, res){
     const data = matchedData(req); // The data object contains all of the data fields that that we validate
     const newUserId = userServices.createUser(data);
     res.status(201).json({msg: "user Created", newUserId});
-
-
-    res.status(201).json({msg: "User created!"});
 }
 export function updateUser(req, res){
     res.status(200).json({msg: `User: ${req.params.uid} has been updated`});

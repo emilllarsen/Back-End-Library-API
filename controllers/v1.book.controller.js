@@ -1,3 +1,4 @@
+import { matchedData } from "express-validator";
 import bookServices from "../services/v1.books.services.js"
 
 export function getAllBooks(req, res){
@@ -16,8 +17,11 @@ export function getLoanedBook(req, res){
 }
 
 export function createBook(req, res){
-    res.status(201).json({msg: `Book created with id: ${req.params.bid}`})
+    const data = matchedData(req)
+    const newBookId = bookServices.createBook(data)
+    res.status(201).json({msg: "Book created: ", newBookId});
 }
+
 export function updateBook(req, res){
     res.status(200).json({msg: `Book is updated!`});
 }

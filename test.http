@@ -5,3 +5,13 @@ Content-Type: application/json
     "username": "TestUser",
     "pwd": "QWer12#%i"
 }
+
+###
+POST http://localhost:7654/api/v1/books
+Content-Type: application/json
+
+{
+    "author": "Someone",
+    "title": "Some title",
+    "isbn": 1234567891234
+}
