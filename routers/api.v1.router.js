@@ -5,12 +5,14 @@ import bController from "../controllers/v1.book.controller.js";
 import { validate } from "../validators/v1.validate.js";
 
 import userValidator from "../validators/v1.user.validator.js";
+import bookValidator from "../validators/v1.book.validator.js";
 const apiV1Router = express.Router();
 
 apiV1Router.use(express.json())
 
 // Assigning handlers to routes
 apiV1Router.get("/users", uController.getAllUsers);
+
 apiV1Router.get(
   "/users/:uid",
   userValidator.validateUid(),
@@ -55,10 +57,11 @@ apiV1Router.delete(
 ); // removing a book from the list of loaned books for a specific user
 
 apiV1Router.get("/books", bController.getAllBooks);
-apiV1Router.get("/books/:bid", bController.getBook);
+apiV1Router.get("/books/:bid", bookValidator.validateBid(), validate, bController.getBook);
 apiV1Router.get("/books/:loans", bController.getLoanedBook);
 
-apiV1Router.post("/books", bController.createBook); // Create a new book
-apiV1Router.put("/books/:bid", bController.updateBook); // Updating a specific book
+apiV1Router.post("/books", bookValidator.validateBook(), validate, bController.createBook); // Create a new book
+apiV1Router.put("/books/:bid", bookValidator.validateBid(), bookValidator.validateBook(), validate, bController.updateBook); // Updating a specific book
+
 
 export default apiV1Router;
