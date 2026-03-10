@@ -1,0 +1,7 @@
+POST http://localhost:7654/api/v1/users
+Content-Type: application/json
+
+{
+    "username": "TestUser",
+    "pwd": "QWer12#%i"
+}

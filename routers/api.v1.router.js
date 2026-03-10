@@ -7,6 +7,8 @@ import { validate } from "../validators/v1.validate.js";
 import userValidator from "../validators/v1.user.validator.js";
 const apiV1Router = express.Router();
 
+apiV1Router.use(express.json())
+
 // Assigning handlers to routes
 apiV1Router.get("/users", uController.getAllUsers);
 apiV1Router.get(
@@ -15,6 +17,7 @@ apiV1Router.get(
   validate,
   uController.getUser,
 );
+
 apiV1Router.get(
   "/users/:uid/loans",
   userValidator.validateUid(),
@@ -22,7 +25,13 @@ apiV1Router.get(
   uController.getLoans,
 );
 
-apiV1Router.post("/users", validate, uController.createUser); // Create a new user
+apiV1Router.post(
+  "/users",
+  userValidator.validateUser(),
+  validate,
+  uController.createUser,
+); // Create a new user
+
 apiV1Router.put(
   "/users/:uid",
   userValidator.validateUid(),
@@ -36,6 +45,7 @@ apiV1Router.post(
   validate,
   uController.loanBook,
 ); // Adding a book to a list of loaned books to a specific user
+
 apiV1Router.delete(
   "/users/:uid/loans/:loanid",
   userValidator.validateUid(),

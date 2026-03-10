@@ -8,6 +8,11 @@ export function getAUser(uid){
     return {name: "Emil", uid: 1, status: "Not very happy for now..." }
 }
 
+export function createUser(usrObj){
+    console.log("New user is to be created!", usrObj)
+    return Math.round(Math.random() * 100000) // just mimicking creating a user and returning the new userId
+}
+
 export function checkUserExist(uid){
     if(uid > 0 && uid < 100){
         return true
@@ -15,7 +20,19 @@ export function checkUserExist(uid){
     throw new Error(`The user with id ${uid} does not exist!`);
 }
 
+export function checkUsernameExist(username){
+    // NOTE: NOT A REAL CHECK FOR NOW!
+    // FIX: Make it real!
+    // TODO: Make it better
+    if(username === "Emil"){
+        return true
+    }
+    return false
+}
+
 export default {
     getAUser,
-    checkUserExist
+    checkUserExist,
+    checkUsernameExist,
+    createUser
 }
