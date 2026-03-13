@@ -3,8 +3,13 @@ Content-Type: application/json
 
 {
     "username": "TestUser",
-    "pwd": "QWer12#%i"
+    "pwd": "QWer12#%i",
+    "email": "some.email@email.com"
 }
+
+
+###
+GET http://localhost:7654/api/v1/users/48172
 
 ###
 POST http://localhost:7654/api/v1/books
