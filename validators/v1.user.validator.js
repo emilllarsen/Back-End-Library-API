@@ -45,10 +45,18 @@ export function validateUser(){
         body("pwd")
             .trim()
             .isStrongPassword({ min: 8, minLowercase: 1, minUppercase: 2, minNumber: 2 })
-            .withMessage("Password should be 9 + characters and contain 2 of each lower and upper case characters, numbers and symbols!")
-
-
-
+            .withMessage("Password should be 9 + characters and contain 2 of each lower and upper case characters, numbers and symbols!"),
+        body("email")
+          .trim()
+          .escape()
+          .isEmail()
+          .withMessage("Not a valid email!")
+          .bail()
+          .custom(email => {
+            // Here would normally check if the email is already in use! 
+            // but we would simply not now
+            return true;
+          })
     ];
 }
 
