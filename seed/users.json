@@ -6,21 +6,22 @@
     "loaned_books": [
       { "book_id": "B-901", "title": "Clean Code" },
       { "book_id": "B-442", "title": "The Pragmatic Programmer" }
-    ]
+    ],
+    "uid": 758157
   },
   {
     "username": "bookworm92",
     "email": "sarah.reads@provider.net",
     "pwd": "$2b$12$N9qo8uLOicG5ZpuK15mKce9f8L8u3V2G4h5i6j7k8l9m1R8Wp6K5g",
-    "loaned_books": [
-      { "book_id": "B-102", "title": "The Great Gatsby" }
-    ]
+    "loaned_books": [{ "book_id": "B-102", "title": "The Great Gatsby" }],
+    "uid": 378651
   },
   {
     "username": "pixel_pirate",
     "email": "arrg@design.co",
     "pwd": "$2b$12$KjH7g6f5e4d3c2b1a0z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i",
-    "loaned_books": []
+    "loaned_books": [],
+    "uid": 453060
   },
   {
     "username": "starlight_reader",
@@ -29,7 +30,8 @@
     "loaned_books": [
       { "book_id": "B-771", "title": "Cosmos" },
       { "book_id": "B-119", "title": "Astrophysics for People in a Hurry" }
-    ]
+    ],
+    "uid": 821788
   },
   {
     "username": "history_buff",
@@ -38,15 +40,15 @@
     "loaned_books": [
       { "book_id": "B-502", "title": "Sapiens" },
       { "book_id": "B-008", "title": "The Silk Roads" }
-    ]
+    ],
+    "uid": 44174
   },
   {
     "username": "chef_marina",
     "email": "marina.cooks@kitchen.io",
     "pwd": "$2b$12$p0o9i8u7y6t5r4e3w2q1a2s3d4f5g6h7j8k9l0z9x8c7v6b5n4m3",
-    "loaned_books": [
-      { "book_id": "B-662", "title": "Salt, Fat, Acid, Heat" }
-    ]
+    "loaned_books": [{ "book_id": "B-662", "title": "Salt, Fat, Acid, Heat" }],
+    "uid": 50675
   },
   {
     "username": "urban_hiker",
@@ -54,7 +56,8 @@
     "pwd": "$2b$12$q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5h6j7k8l9z0x9c8v7b6n5m4",
     "loaned_books": [
       { "book_id": "B-882", "title": "The Old Man and the Sea" }
-    ]
+    ],
+    "uid": 767985
   },
   {
     "username": "mystery_maven",
@@ -63,29 +66,29 @@
     "loaned_books": [
       { "book_id": "B-221", "title": "Sherlock Holmes" },
       { "book_id": "B-223", "title": "Murder on the Orient Express" }
-    ]
+    ],
+    "uid": 140845
   },
   {
     "username": "tech_tina",
     "email": "tina.bits@startup.com",
     "pwd": "$2b$12$a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
-    "loaned_books": []
+    "loaned_books": [],
+    "uid": 258828
   },
   {
     "username": "zen_master",
     "email": "peace@meditate.org",
     "pwd": "$2b$12$z9y8x7w6v5u4t3s2r1q0p9o8n7m6l5k4j3i2h1g0f9e8d7c6b5a4",
-    "loaned_books": [
-      { "book_id": "B-411", "title": "The Power of Now" }
-    ]
+    "loaned_books": [{ "book_id": "B-411", "title": "The Power of Now" }],
+    "uid": 3731
   },
   {
     "username": "globetrotter",
     "email": "maps@traveler.com",
     "pwd": "$2b$12$v1b2n3m4a5s6d7f8g9h0j1k2l3q4w5e6r7t8y9u0i1o2p3z4x5c6",
-    "loaned_books": [
-      { "book_id": "B-150", "title": "Into the Wild" }
-    ]
+    "loaned_books": [{ "book_id": "B-150", "title": "Into the Wild" }],
+    "uid": 537769
   },
   {
     "username": "scifi_sam",
@@ -94,15 +97,15 @@
     "loaned_books": [
       { "book_id": "B-990", "title": "Dune" },
       { "book_id": "B-991", "title": "Foundation" }
-    ]
+    ],
+    "uid": 370111
   },
   {
     "username": "nature_lover",
     "email": "green.thumb@forest.com",
     "pwd": "$2b$12$x1c2v3b4n5m6l7k8j9h0g9f8d7s6a5q4w3e2r1t0y9u8i7o6p5z4",
-    "loaned_books": [
-      { "book_id": "B-331", "title": "Silent Spring" }
-    ]
+    "loaned_books": [{ "book_id": "B-331", "title": "Silent Spring" }],
+    "uid": 153368
   },
   {
     "username": "logic_gates",
@@ -110,15 +113,15 @@
     "pwd": "$2b$12$n1m2b3v4c5x6z7a8s9d0f1g2h3j4k5l6q7w8e9r0t1y2u3i4o5p6",
     "loaned_books": [
       { "book_id": "B-555", "title": "Code: The Hidden Language" }
-    ]
+    ],
+    "uid": 103412
   },
   {
     "username": "poetry_pro",
     "email": "rhyme@verse.com",
     "pwd": "$2b$12$m5n4b3v2c1x0z9l8k7j6h5g4f3d2s1a0q1w2e3r4t5y6u7i8o9p0",
-    "loaned_books": [
-      { "book_id": "B-012", "title": "Leaves of Grass" }
-    ]
+    "loaned_books": [{ "book_id": "B-012", "title": "Leaves of Grass" }],
+    "uid": 82121
   },
   {
     "username": "finance_wizard",
@@ -126,36 +129,35 @@
     "pwd": "$2b$12$k1j2h3g4f5d6s7a8q9w0e1r2t3y4u5i6o7p8l9k0j1h2g3f4d5s6",
     "loaned_books": [
       { "book_id": "B-808", "title": "The Intelligent Investor" }
-    ]
+    ],
+    "uid": 116763
   },
   {
     "username": "art_curator",
     "email": "gallery@museum.org",
     "pwd": "$2b$12$s1d2f3g4h5j6k7l8z9x0c1v2b3n4m5q6w7e8r9t0y1u2i3o4p5a6",
-    "loaned_books": [
-      { "book_id": "B-440", "title": "Ways of Seeing" }
-    ]
+    "loaned_books": [{ "book_id": "B-440", "title": "Ways of Seeing" }],
+    "uid": 129538
   },
   {
     "username": "bio_hacker",
     "email": "dna@lab.io",
     "pwd": "$2b$12$w1e2r3t4y5u6i7o8p9a0s1d2f3g4h5j6k7l8z9x0c1v2b3n4m5n6",
-    "loaned_books": [
-      { "book_id": "B-210", "title": "The Selfish Gene" }
-    ]
+    "loaned_books": [{ "book_id": "B-210", "title": "The Selfish Gene" }],
+    "uid": 813434
   },
   {
     "username": "marathon_runner",
     "email": "miles@track.com",
     "pwd": "$2b$12$t1y2u3i4o5p6a7s8d9f0g1h2j3k4l5z6x7c8v9b0n1m2q3w4e5r6",
-    "loaned_books": []
+    "loaned_books": [],
+    "uid": 202266
   },
   {
     "username": "vinyl_viking",
     "email": "analog@records.com",
     "pwd": "$2b$12$y1u2i3o4p5a6s7d8f9g0h1j2k3l4z5x6c7v8b9n0m1q2w3e4r5t6",
-    "loaned_books": [
-      { "book_id": "B-701", "title": "High Fidelity" }
-    ]
+    "loaned_books": [{ "book_id": "B-701", "title": "High Fidelity" }],
+    "uid": 174458
   }
 ]

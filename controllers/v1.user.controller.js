@@ -2,6 +2,13 @@ import { matchedData } from "express-validator";
 import userServices from "../services/v1.users.services.js";
 
 
+export async function getUserStats(req, res) {
+  const { uid } = matchedData(req);
+  const stats = await userServices.calcPerUseStats(uid)
+  res.json({stats});
+}
+
+
 export async function getAllUsers(req, res){
     const userObjList = await userServices.getAllUsers()
     res.json(userObjList) // NOTE: you'd probably eant to transform the raw outouf from the db, e.g, removing unnecessary or security compromising fields

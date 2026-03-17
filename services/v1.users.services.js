@@ -6,6 +6,12 @@ import crypto from "crypto";
 // They simply receive relevant to them pieces of information
 // Given to them by controllers
 
+export async function calcPerUseStats(uid){
+  //TODO: Finish next lecture!
+  // return await db.collection()
+}
+
+
 export async function getAllUsers() {
   return await db.collection("users").find().limit(10).toArray();
 }
@@ -13,12 +19,13 @@ export async function getAllUsers() {
 export async function getAUser(uid) {
     return await db.collection("users").findOne({shortid: uid})
   // FIX
-  // sending a request to DB to get a specific user
-  //return { name: "Emil", uid: 1, status: "Not very happy for now..." };
+  // sending a request to DB to get a specific users
 }
 
+
+
 export async function createUser(usrObj) {
-  //console.log("New user is to be created!", usrObj);
+  console.log("New user is to be created!", usrObj);
   const user = {
     username: usrObj.username,
     email: usrObj.email,
@@ -28,13 +35,10 @@ export async function createUser(usrObj) {
 
   const res = await db.collection("users").insertOne(user);
   if (res.acknowledged) {
-    // if opperation succeeded w return an id to find the new user by
+    // if operation succeeded w return an id to find the new user by
     return user.shortid;
   }
-
-  // If the operation fiales, we something!
   return null;
-  //return Math.round(Math.random() * 100000); // just mimicking creating a user and returning the new userId
 }
 
 export async function checkUserExist(uid) {
@@ -61,5 +65,5 @@ export default {
   checkUserExist,
   checkUsernameExist,
   createUser,
-  getAllUsers,
+  getAllUsers
 };

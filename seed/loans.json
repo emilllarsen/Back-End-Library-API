@@ -1,0 +1,562 @@
+[
+  {
+    "book_id": "B001",
+    "borrower": "alice01",
+    "borrowed_date": { "$date": "2026-01-05T00:00:00Z" },
+    "returned_date": { "$date": "2026-01-25T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B002",
+    "borrower": "bob02",
+    "borrowed_date": { "$date": "2026-01-10T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-05T00:00:00Z" },
+    "days_borrowed": 26,
+    "days_overdue": 5
+  },
+  {
+    "book_id": "B003",
+    "borrower": "carol03",
+    "borrowed_date": { "$date": "2026-01-12T00:00:00Z" },
+    "returned_date": { "$date": "2026-01-30T00:00:00Z" },
+    "days_borrowed": 18,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B004",
+    "borrower": "dave04",
+    "borrowed_date": { "$date": "2026-01-15T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-01T00:00:00Z" },
+    "days_borrowed": 17,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B005",
+    "borrower": "eve05",
+    "borrowed_date": { "$date": "2026-01-20T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-10T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B006",
+    "borrower": "frank06",
+    "borrowed_date": { "$date": "2026-01-22T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-12T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B007",
+    "borrower": "grace07",
+    "borrowed_date": { "$date": "2026-01-25T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-15T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B008",
+    "borrower": "henry08",
+    "borrowed_date": { "$date": "2026-01-28T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-18T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B009",
+    "borrower": "irene09",
+    "borrowed_date": { "$date": "2026-02-01T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-21T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B010",
+    "borrower": "jack10",
+    "borrowed_date": { "$date": "2026-02-03T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-23T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B011",
+    "borrower": "kate11",
+    "borrowed_date": { "$date": "2026-02-05T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-25T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B012",
+    "borrower": "leo12",
+    "borrowed_date": { "$date": "2026-02-06T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-26T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B013",
+    "borrower": "mia13",
+    "borrowed_date": { "$date": "2026-02-08T00:00:00Z" },
+    "returned_date": { "$date": "2026-02-28T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B014",
+    "borrower": "nick14",
+    "borrowed_date": { "$date": "2026-02-10T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-03T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B015",
+    "borrower": "olivia15",
+    "borrowed_date": { "$date": "2026-02-12T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-05T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B016",
+    "borrower": "paul16",
+    "borrowed_date": { "$date": "2026-02-15T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-07T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B017",
+    "borrower": "quinn17",
+    "borrowed_date": { "$date": "2026-02-17T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-10T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B018",
+    "borrower": "rachel18",
+    "borrowed_date": { "$date": "2026-02-20T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-15T00:00:00Z" },
+    "days_borrowed": 23,
+    "days_overdue": 3
+  },
+  {
+    "book_id": "B019",
+    "borrower": "sam19",
+    "borrowed_date": { "$date": "2026-02-22T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-12T00:00:00Z" },
+    "days_borrowed": 18,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B020",
+    "borrower": "tina20",
+    "borrowed_date": { "$date": "2026-02-25T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-15T00:00:00Z" },
+    "days_borrowed": 18,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B021",
+    "borrower": "alice01",
+    "borrowed_date": { "$date": "2026-03-01T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-20T00:00:00Z" },
+    "days_borrowed": 19,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B022",
+    "borrower": "bob02",
+    "borrowed_date": { "$date": "2026-03-02T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-22T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B023",
+    "borrower": "carol03",
+    "borrowed_date": { "$date": "2026-03-03T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-25T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B024",
+    "borrower": "dave04",
+    "borrowed_date": { "$date": "2026-03-04T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-24T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B025",
+    "borrower": "eve05",
+    "borrowed_date": { "$date": "2026-03-05T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-28T00:00:00Z" },
+    "days_borrowed": 23,
+    "days_overdue": 3
+  },
+  {
+    "book_id": "B026",
+    "borrower": "frank06",
+    "borrowed_date": { "$date": "2026-03-06T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-24T00:00:00Z" },
+    "days_borrowed": 18,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B027",
+    "borrower": "grace07",
+    "borrowed_date": { "$date": "2026-03-07T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-27T00:00:00Z" },
+    "days_borrowed": 20,
+    "days_overdue": 0
+  },
+  {
+    "book_id": "B028",
+    "borrower": "henry08",
+    "borrowed_date": { "$date": "2026-03-08T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-29T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B029",
+    "borrower": "irene09",
+    "borrowed_date": { "$date": "2026-03-09T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-30T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B030",
+    "borrower": "jack10",
+    "borrowed_date": { "$date": "2026-03-10T00:00:00Z" },
+    "returned_date": { "$date": "2026-03-31T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B031",
+    "borrower": "kate11",
+    "borrowed_date": { "$date": "2026-03-11T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-01T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B032",
+    "borrower": "leo12",
+    "borrowed_date": { "$date": "2026-03-12T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-02T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B033",
+    "borrower": "mia13",
+    "borrowed_date": { "$date": "2026-03-13T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-03T00:00:00Z" },
+    "days_borrowed": 21,
+    "days_overdue": 1
+  },
+  {
+    "book_id": "B034",
+    "borrower": "nick14",
+    "borrowed_date": { "$date": "2026-03-14T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-05T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B035",
+    "borrower": "olivia15",
+    "borrowed_date": { "$date": "2026-03-15T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-06T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B036",
+    "borrower": "paul16",
+    "borrowed_date": { "$date": "2026-03-16T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-07T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B037",
+    "borrower": "quinn17",
+    "borrowed_date": { "$date": "2026-03-17T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-08T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B038",
+    "borrower": "rachel18",
+    "borrowed_date": { "$date": "2026-03-18T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-09T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B039",
+    "borrower": "sam19",
+    "borrowed_date": { "$date": "2026-03-19T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-10T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B040",
+    "borrower": "tina20",
+    "borrowed_date": { "$date": "2026-03-20T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-11T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B041",
+    "borrower": "alice01",
+    "borrowed_date": { "$date": "2026-03-21T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-12T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B042",
+    "borrower": "bob02",
+    "borrowed_date": { "$date": "2026-03-22T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-13T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B043",
+    "borrower": "carol03",
+    "borrowed_date": { "$date": "2026-03-23T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-14T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B044",
+    "borrower": "dave04",
+    "borrowed_date": { "$date": "2026-03-24T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-15T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B045",
+    "borrower": "eve05",
+    "borrowed_date": { "$date": "2026-03-25T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-16T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B046",
+    "borrower": "frank06",
+    "borrowed_date": { "$date": "2026-03-26T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-17T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B047",
+    "borrower": "grace07",
+    "borrowed_date": { "$date": "2026-03-27T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-18T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B048",
+    "borrower": "henry08",
+    "borrowed_date": { "$date": "2026-03-28T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-19T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B049",
+    "borrower": "irene09",
+    "borrowed_date": { "$date": "2026-03-29T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-20T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B050",
+    "borrower": "jack10",
+    "borrowed_date": { "$date": "2026-03-30T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-21T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B051",
+    "borrower": "kate11",
+    "borrowed_date": { "$date": "2026-03-31T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-22T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B052",
+    "borrower": "leo12",
+    "borrowed_date": { "$date": "2026-04-01T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-23T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B053",
+    "borrower": "mia13",
+    "borrowed_date": { "$date": "2026-04-02T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-24T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B054",
+    "borrower": "nick14",
+    "borrowed_date": { "$date": "2026-04-03T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-25T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B055",
+    "borrower": "olivia15",
+    "borrowed_date": { "$date": "2026-04-04T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-26T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B056",
+    "borrower": "paul16",
+    "borrowed_date": { "$date": "2026-04-05T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-27T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B057",
+    "borrower": "quinn17",
+    "borrowed_date": { "$date": "2026-04-06T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-28T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B058",
+    "borrower": "rachel18",
+    "borrowed_date": { "$date": "2026-04-07T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-29T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B059",
+    "borrower": "sam19",
+    "borrowed_date": { "$date": "2026-04-08T00:00:00Z" },
+    "returned_date": { "$date": "2026-04-30T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B060",
+    "borrower": "tina20",
+    "borrowed_date": { "$date": "2026-04-09T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-01T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B061",
+    "borrower": "alice01",
+    "borrowed_date": { "$date": "2026-04-10T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-02T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B062",
+    "borrower": "bob02",
+    "borrowed_date": { "$date": "2026-04-11T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-03T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B063",
+    "borrower": "carol03",
+    "borrowed_date": { "$date": "2026-04-12T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-04T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B064",
+    "borrower": "dave04",
+    "borrowed_date": { "$date": "2026-04-13T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-05T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B065",
+    "borrower": "eve05",
+    "borrowed_date": { "$date": "2026-04-14T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-06T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B066",
+    "borrower": "frank06",
+    "borrowed_date": { "$date": "2026-04-15T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-07T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B067",
+    "borrower": "grace07",
+    "borrowed_date": { "$date": "2026-04-16T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-08T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B068",
+    "borrower": "henry08",
+    "borrowed_date": { "$date": "2026-04-17T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-09T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B069",
+    "borrower": "irene09",
+    "borrowed_date": { "$date": "2026-04-18T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-10T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  },
+  {
+    "book_id": "B070",
+    "borrower": "jack10",
+    "borrowed_date": { "$date": "2026-04-19T00:00:00Z" },
+    "returned_date": { "$date": "2026-05-11T00:00:00Z" },
+    "days_borrowed": 22,
+    "days_overdue": 2
+  }
+]

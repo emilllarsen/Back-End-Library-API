@@ -9,14 +9,22 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:7654/api/v1/users/48172
+GET http://localhost:7654/api/v1/users/30567
+
+
+
+
 
 ###
 POST http://localhost:7654/api/v1/books
 Content-Type: application/json
 
 {
-    "author": "Someone",
-    "title": "Some title",
+    "author": "J.K rowling",
+    "title": "Some Harry Potter Book",
+    "release_year": 2000,
     "isbn": 1234567891234
 }
+
+###
+GET http://localhost:7654/api/v1/books/2603
