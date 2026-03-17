@@ -63,11 +63,12 @@ apiV1Router.delete(
 
 
 apiV1Router.get("/books", bController.getAllBooks);
+apiV1Router.get("/books/stats", bController.getAllBookStats);
+
 apiV1Router.get("/books/:bid", booksValidator.validateBid(), validate, bController.getBook);
 apiV1Router.get("/books/:loans", bController.getLoanedBook);
 
 apiV1Router.post("/books", booksValidator.validateBook(), validate, bController.createBook); // Create a new book
 apiV1Router.put("/books/:bid", booksValidator.validateBid(), booksValidator.validateBook(), validate, bController.updateBook); // Updating a specific book
-
 
 export default apiV1Router;

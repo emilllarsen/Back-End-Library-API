@@ -2,6 +2,11 @@ import { matchedData } from "express-validator";
 import bookServices from "../services/v1.books.services.js";
 
 
+export async function getAllBookStats(req, res){
+  const stats = await bookServices.getAllBooksStats();
+  // console.log(stats);
+  res.json(stats);
+}
 
 export async function getAllBooks(req, res) {
   const bookObjList = await bookServices.getAllBooks();
@@ -37,4 +42,5 @@ export default {
   getLoanedBook,
   createBook,
   updateBook,
+  getAllBookStats
 };

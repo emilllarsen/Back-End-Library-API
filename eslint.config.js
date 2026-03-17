@@ -9,8 +9,7 @@ export default defineConfig([
     languageOptions: { globals: globals.node } ,
     rules: {
       "semi": "warn",
-      "comma-dangle": "warn",
-      "no-unused-var": "warn"
+      "no-unused-vars": "warn"
     }
-  },
+  }
 ]);

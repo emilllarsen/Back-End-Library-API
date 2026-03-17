@@ -30,8 +30,8 @@ function _getUserStatPipeline() {
         borrowedBooks: { $addToSet: "$bookId" },
         totDaysLate: { $sum: "$daysOverdue" },
         avgDaysLate: { $avg: "$daysOverdue" },
-        longestDaysLate: { $max: "$daysOverdue" },
-      },
+        longestDaysLate: { $max: "$daysOverdue" }
+      }
     },
     // changing the shape of the data for the next stage <-- it's run per record/document - as everything else
     {
@@ -40,8 +40,8 @@ function _getUserStatPipeline() {
         totDaysLate: 1,
         avgDaysLate: 1,
         longestDaysLate: 1,
-        numUniqueBorrows: { $size: "$borrowedBooks" },
-      },
+        numUniqueBorrows: { $size: "$borrowedBooks" }
+      }
     },
     // we want to add some more meaningful user info - $lookup
     {
@@ -49,27 +49,27 @@ function _getUserStatPipeline() {
         from: "users",
         localField: "_id",
         foreignField: "uid",
-        as: "user",
-      },
+        as: "user"
+      }
     },
     // replacing the array in record.user with the 1st user info - as an object
     {
       $unwind: {
-        path: "$user",
-      },
+        path: "$user"
+      }
     },
     // excluding undesired info from the final returned data
     {
       $project: {
         "user.pwd": 0,
-        "user.loaned_books": 0,
-      },
-    },
+        "user.loaned_books": 0
+      }
+    }
   ];
 }
 export async function calcAllUserStats() {
   // same as calcPerUserStats, but does it for all users - so it returns an array
-  const pipeline = _getUserStatPipeline();
+  const pipeline =  _getUserStatPipeline();
   return (
     db
       .collection("loans")
@@ -104,7 +104,7 @@ export async function createUser(usrObj) {
     username: usrObj.username,
     email: usrObj.email,
     pwd: crypto.createHash("md5").update(usrObj.pwd).digest("hex"),
-    uid: Math.round(Math.random() * 100000),
+    uid: Math.round(Math.random() * 100000)
   };
 
   const res = await db.collection("users").insertOne(user);

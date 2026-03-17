@@ -8,7 +8,7 @@ export async function getAllUserStats(req, res){
 
 export async function getUserStats(req, res) {
   const { uid } = matchedData(req);
-  const stats = await userServices.calcPerUseStats(uid)
+  const stats = await userServices.calcPerUseStats(uid);
   res.json({stats});
 }
 
