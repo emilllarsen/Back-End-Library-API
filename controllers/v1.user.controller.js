@@ -1,6 +1,10 @@
 import { matchedData } from "express-validator";
 import userServices from "../services/v1.users.services.js";
 
+export async function getAllUserStats(req, res){
+    const stats = await userServices.calcAllUserStats();
+    res.json(stats);
+}
 
 export async function getUserStats(req, res) {
   const { uid } = matchedData(req);
@@ -62,5 +66,6 @@ export default {
     createUser,
     updateUser,
     loanBook,
-    unloanBook
+    unloanBook,
+    getAllUserStats
 }

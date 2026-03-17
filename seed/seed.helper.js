@@ -24,7 +24,7 @@ export function generateLoans(users, books) {
   for (let i = N_RECORDS; i--; ) {
     // The user that borrowed a book
     const { uid } = users[Math.floor(Math.random() * users.length)];
-    const { book_id } = books[Math.floor(Math.random() * books.length)];
+    const { bookId } = books[Math.floor(Math.random() * books.length)];
 
     // When the book was returned!
     const borrowBookDaysAgo = Math.round(Math.random() * MAX_DAYS_PAST);
@@ -40,7 +40,7 @@ export function generateLoans(users, books) {
     const borrowedDate = getCurrentDateMinusDays(borrowBookDaysAgo + returnedAfterNDays );
     const aLoan = {
         borrower: uid,
-        book_id,
+        bookId,
         borrowedDate,
         returnedDate,
         daysOverdue: (returnedAfterNDays > N_DAYS_LATE)?(returnedAfterNDays - N_DAYS_LATE):0

@@ -13,6 +13,8 @@ apiV1Router.use(express.json())
 // Assigning handlers to routes
 apiV1Router.get("/users", uController.getAllUsers);
 
+apiV1Router.get("/users/stats", uController.getAllUserStats);
+
 apiV1Router.get(
   "/users/:uid",
   userValidator.validateUid(),
